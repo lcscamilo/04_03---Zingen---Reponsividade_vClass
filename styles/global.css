@@ -80,6 +80,18 @@ a {
   color: inherit;
 }
 
+a:hover {
+  background: linear-gradient(
+    90deg,
+    var(--brand-color-secondary) 0,
+    var(--brand-color-primary) 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* Foi observado que em alguns navegador ao colocar o none ele perde o sentido de lista */
 ul[role=list] {
   list-style: none;
